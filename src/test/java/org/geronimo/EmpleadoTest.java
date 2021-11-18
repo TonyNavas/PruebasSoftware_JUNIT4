@@ -23,6 +23,12 @@ public class EmpleadoTest {
 @Test
     public void ProbarSalarioNeto(){
      Empleado SN = new Empleado();
+     Assert.assertEquals(1050, SN.calcularSalarioNeto(1250),0.001);
+     Assert.assertEquals(1640, SN.calcularSalarioNeto(2000),0.001);
+     Assert.assertEquals(1259.9916, SN.calcularSalarioNeto(1499.99f),0.001);
+     Assert.assertEquals(840, SN.calcularSalarioNeto(1000),0.001);
+    Assert.assertEquals(999.99, SN.calcularSalarioNeto(999.99f),0.001);
+    Assert.assertEquals(0, SN.calcularSalarioNeto(0),0.001);
+}
 }
 
-}
