@@ -20,4 +20,9 @@ public class EmpleadoTest {
      Assert.assertEquals(1500.0, EPE.calcularSalarioBruto("ENCARGADO", 500,0), 0.001);
      Assert.assertEquals(1660.0, EPE.calcularSalarioBruto("ENCARGADO", 0,8), 0.001);
  }
+@Test
+    public void ProbarSalarioNeto(){
+     
+}
+
 }
