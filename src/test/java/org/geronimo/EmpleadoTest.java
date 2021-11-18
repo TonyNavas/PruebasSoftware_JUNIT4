@@ -22,7 +22,7 @@ public class EmpleadoTest {
  }
 @Test
     public void ProbarSalarioNeto(){
-     
+     Empleado SN = new Empleado();
 }
 
 }
