@@ -13,6 +13,6 @@ public class EmpleadoTest {
     }
  @Test
     public void PruebaEncargado(){
-     
+     Empleado EPE = new Empleado();
  }
 }
