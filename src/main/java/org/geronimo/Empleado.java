@@ -41,4 +41,7 @@ public class Empleado {
             }
             return 0;
     }
+    public double calcularSalarioNeto(float SalarioBruto){
+        return 0;
+    }
 }
