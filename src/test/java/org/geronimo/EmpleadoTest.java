@@ -1,15 +1,19 @@
 package org.geronimo;
 
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 public class EmpleadoTest {
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
  @Test
-    public void PruebaEmpleado(){
+ public void PruebaEmpleado(){
         Empleado EP = new Empleado();
         Assert.assertEquals(1360.0, EP.calcularSalarioBruto("VENDEDOR", 2000,8), 0.001);
         Assert.assertEquals(1260.0, EP.calcularSalarioBruto("VENDEDOR", 1500,3), 0.001);
-        Assert.assertEquals(1360.0, EP.calcularSalarioBruto("VENDEDOR", (float) 1499.99f,0), 0.001);
+        Assert.assertEquals(1100.0, EP.calcularSalarioBruto("VENDEDOR", (float) 1499.99f,0), 0.001);
     }
  @Test
     public void PruebaEncargado(){
@@ -19,7 +23,10 @@ public class EmpleadoTest {
      Assert.assertEquals(1560.0, EPE.calcularSalarioBruto("ENCARGADO", 999.99f,3), 0.001);
      Assert.assertEquals(1500.0, EPE.calcularSalarioBruto("ENCARGADO", 500,0), 0.001);
      Assert.assertEquals(1660.0, EPE.calcularSalarioBruto("ENCARGADO", 0,8), 0.001);
+
  }
+    @Rule
+    public ExpectedException exceptionRule = ExpectedException.none();
 @Test
     public void ProbarSalarioNeto(){
      Empleado SN = new Empleado();
@@ -29,6 +36,12 @@ public class EmpleadoTest {
      Assert.assertEquals(840, SN.calcularSalarioNeto(1000),0.001);
     Assert.assertEquals(999.99, SN.calcularSalarioNeto(999.99f),0.001);
     Assert.assertEquals(0, SN.calcularSalarioNeto(0),0.001);
+
+
+
+
+
+
 }
 }
 

@@ -45,7 +45,7 @@ public class Empleado {
             if (SalarioBruto  < 1000){
                 return SalarioBruto;
             }
-            if (SalarioBruto >= 1000 && SalarioBruto < 1500){
+            if (SalarioBruto >=1000 && SalarioBruto < 1500){
                 return SalarioBruto - (SalarioBruto * 0.16);
             }
             if (SalarioBruto > 1500 ){
