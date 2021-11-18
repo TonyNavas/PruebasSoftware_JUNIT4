@@ -11,4 +11,8 @@ public class EmpleadoTest {
         Assert.assertEquals(1260.0, EP.calcularSalarioBruto("VENDEDOR", 1500,3), 0.001);
         Assert.assertEquals(1360.0, EP.calcularSalarioBruto("VENDEDOR", (float) 1499.99f,0), 0.001);
     }
+ @Test
+    public void PruebaEncargado(){
+     
+ }
 }
