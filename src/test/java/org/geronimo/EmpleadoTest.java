@@ -5,6 +5,6 @@ import org.junit.Test;
 public class EmpleadoTest {
  @Test
     public void PruebaEmpleado(){
-        
+        Empleado EP = new Empleado();
     }
 }
