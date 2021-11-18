@@ -14,5 +14,10 @@ public class EmpleadoTest {
  @Test
     public void PruebaEncargado(){
      Empleado EPE = new Empleado();
+     Assert.assertEquals(1760.0, EPE.calcularSalarioBruto("ENCARGADO", 1250,8), 0.001);
+     Assert.assertEquals(1600.0, EPE.calcularSalarioBruto("ENCARGADO", 1000,0), 0.001);
+     Assert.assertEquals(1560.0, EPE.calcularSalarioBruto("ENCARGADO", 999.99f,3), 0.001);
+     Assert.assertEquals(1500.0, EPE.calcularSalarioBruto("ENCARGADO", 500,0), 0.001);
+     Assert.assertEquals(1660.0, EPE.calcularSalarioBruto("ENCARGADO", 0,8), 0.001);
  }
 }
